@@ -1,0 +1,403 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.padding-5 {
+    padding: 5px;
+}
+
+.marging-top-5 {
+    margin-top: 5px;
+}
+
+.border {
+    border: 1px solid #000000;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#game-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#palyers-list ol {
+    list-style: none;
+}
+
+.custom-button {
+    cursor: pointer;
+    color: #000000;
+    background-color: white;
+}
+
+#dice-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dice-board .dice {
+    display: flex;
+    justify-content: center;
+}
+
+#dice-board .dice img {
+    width: 18vw;
+    background-color: #000000;
+}
+
+#players-spawns {
+    display: flex;
+    justify-content: space-between;
+}
+
+#players-spawns ol {
+    width: 100%;
+    list-style: none;
+}
+
+#players-spawns .spawn {
+    height: 50px;
+    width: 50px;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+
+.game-container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+}
+
+#game-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#game-dashboard .box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    font-size: 1.5rem;
+}
+
+footer {
+    margin-top: auto;
+}
+
+@media (min-width: 653px) {
+    h1 {
+        font-size: 0.55rem;
+    }
+    h3 {
+        font-size: 0.50rem;
+    }
+
+    #palyers-list ol li {
+        list-style: none;
+        font-size: 0.45rem;
+    }
+
+    #dice-board {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #dice-board .dice img {
+        width: 15vw;
+    }
+
+    #players-spawns {
+        font-size: 0.45rem;
+    }
+
+    #game-result {
+        font-size: 0.45rem;
+    }
+
+    .custom-button {
+        font-size: 0.45rem;
+    }
+
+    .container-padding {
+        padding: 4px;
+    }
+
+    #game-dashboard .box {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000000;
+        font-size: 0.55rem;
+    }
+
+    #players-spawns .spawn {
+        height: 30px;
+        width: 30px;
+        font-size: 0.8rem;
+        border-radius: 50%;
+        border: 1px solid #000000;
+    }
+}
+
+@media (min-width: 667px) {
+    h1 {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 0.90rem;
+    }
+
+    #palyers-list ol li {
+        list-style: none;
+        font-size: 0.80rem;
+    }
+
+    #dice-board .dice img {
+        width: 21vw;
+    }
+
+    .custom-button {
+        font-size: 0.7rem;
+    }
+
+    #players-spawns {
+        font-size: 0.7rem;
+    }
+
+    #game-result {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 720px) {
+    #dice-board .dice img {
+        width: 19vw;
+    }
+
+    #game-dashboard .box {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000000;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 740px) {
+    #dice-board .dice img {
+        width: 19vw;
+    }
+}
+
+@media (min-width: 844px) {
+    #dice-board .dice img {
+        width: 17vw;
+    }
+}
+
+@media (min-width: 896px) {
+    #dice-board .dice img {
+        width: 16vw;
+    }
+}
+
+@media (min-width: 914px) {
+    #dice-board .dice img {
+        width: 15vw;
+    }
+
+    #dice-board {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #game-dashboard .box {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000000;
+        font-size: 1rem;
+    }
+
+    #players-spawns .spawn {
+        height: 35px;
+        width: 35px;
+        font-size: 0.8rem;
+        border-radius: 50%;
+        border: 1px solid #000000;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    #dice-board .dice img {
+        width: 18vw;
+    }
+
+    .custom-button {
+        font-size: .95rem;
+    }
+
+    #players-spawns {
+        font-size: 1rem;
+    }
+
+    #game-result {
+        font-size: 1rem;
+    }
+
+    .container-padding {
+        padding: 5px;
+    }
+
+    #game-dashboard .box {
+        width: 49px;
+        height: 49px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000000;
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1180px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    #dice-board .dice img {
+        width: 16vw;
+    }
+
+    .custom-button {
+        font-size: .95rem;
+    }
+
+    #players-spawns {
+        font-size: 1rem;
+    }
+
+    #game-result {
+        font-size: 1rem;
+    }
+
+    .container-padding {
+        padding: 5px;
+    }
+
+    #game-dashboard .box {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000000;
+        font-size: 1.25rem;
+    }
+
+    #players-spawns .spawn {
+        height: 50px;
+        width: 50px;
+        font-size: 0.8rem;
+        border-radius: 50%;
+        border: 1px solid #000000;
+    }
+}
+
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    #palyers-list ol li {
+        font-size: 1rem;
+    }
+
+    #players-spawns {
+        font-size: 1rem;
+    }
+
+    #game-result {
+        font-size: 1rem;
+    }
+
+    .custom-button {
+        font-size: 1rem;
+    }
+
+    #dice-board .dice img {
+        width: 15vw;
+    }
+
+    #game-dashboard .box {
+        width: 65px;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000000;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1368px) {
+    #dice-board .dice img {
+        width: 14vw;
+    }
+
+    #game-dashboard .box {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000000;
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake And Ladder Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="main-container" class="container-padding">
+        <header class="text-center border container-padding">
+            <h1>Snake And Ladder Game</h1>
+        </header>
+        <main id="game-container" class="border marging-top-5 container-padding">
+            <section class="game-container-left border container-padding">
+                <div>
+                    <h3 class="container-padding">Players List</h3>
+                    <div id="palyers-list" class="container-padding">
+                        <ol>
+                            <li class="border container-padding">No Player. Add one!!!</li>
+                        </ol>
+                        <div class="add-player marging-top-5">
+                            <button id="add-player-button" class="custom-button container-padding border">Add Player</button>
+                            <button id="start-game-button" class="custom-button container-padding border">Start Game</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="container-padding">Dice Board</h3>
+                    <div id="dice-board" class="container-padding">
+                        <div class="dice">
+                            <img id="dice-image" src="./images/perspective-dice-six-faces-random.png" />
+                        </div>
+                        <div class="dice-button">
+                            <button id="roll-dice" class="custom-button marging-top-5 container-padding border">Roll the dice</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 id="players-spawns-heading" class="container-padding" style="display: none;">Players Pawn</h3>
+                    <div id="players-spawns" class="container-padding"></div>
+                </div>
+                <div>
+                    <h3 id="game-result-heading" class="container-padding" style="display: none;">Game Result</h3>
+                    <div id="game-result" class="container-padding"></div>
+                </div>
+            </section>
+            <section class="game-container-content border container-padding">
+                <div id="game-dashboard"></div>
+            </section>
+        </main>
+        <footer class="text-center border container-padding border">
+            <h3>Thank You!!!</h3>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
